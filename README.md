@@ -1,0 +1,5 @@
+First, do not rely on the memory system (i.e., storing specific mutations in the memory dictionary) that I implemented. It may malfunction and halt the entire code. If you need to preserve certain traits, it is safer to print and save the full matrix and use that as a new starting point whenever you want to restart the evolution from a specific generation.
+
+Second, when the simulation runs continuously for more than 2,000 generations, it occasionally fails to interpret the weight dictionary correctly for reasons I do not fully understand. This issue occurs infrequently when running a single notebook, but it becomes much more common when multiple notebooks are running simultaneously (possibly due to RAM constraints). Therefore, if you plan to run multiple notebooks, I recommend stopping the algorithm by around 3,000 generations, printing the matrix, and restarting the algorithm from the saved matrix with an updated dictionary.
+
+Third, the "Calculator For the Simulation" notebook would be very helpful for designing the weight values needed to produce the intended evolutionary trajectory.
